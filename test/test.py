@@ -1192,6 +1192,6 @@ if __name__ == "__main__":
     import sys
 
     if sys.version_info >= (3, 1):
-        unittest.main(warnings="ignore")
+        unittest.main(warnings="ignore", argv=sys.argv)
     else:
-        unittest.main()
+        unittest.main(argv=sys.argv)
